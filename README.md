@@ -55,12 +55,12 @@ MuseForge employs a three-stage progressive learning pipeline that mimics a huma
 
 ```mermaid
 graph TD
-    A[Cultural Image Input] --> B[👁️ Vision Encoder (Qwen2-VL)]
-    B --> C[🧠 Language Model Core]
-    C --> D[**Stage 1: The Observer**<br/>Identifies cultural elements]
-    D --> E[**Stage 2: The Scholar**<br/>Understands regional patterns]
-    E --> F[**Stage 3: The Storyteller**<br/>Weaves an authentic narrative]
-    F --> G[📖 Forged Cultural Story]
+    A[Cultural Image Input] --> B[Vision Encoder (Qwen2-VL)]
+    B --> C[Language Model Core]
+    C --> D[Stage 1: The Observer - Identifies cultural elements]
+    D --> E[Stage 2: The Scholar - Understands regional patterns]
+    E --> F[Stage 3: The Storyteller - Weaves an authentic narrative]
+    F --> G[Forged Cultural Story]
 ```
 
 ### 🔍 Stage 1 — The Eye of the Observer
@@ -161,14 +161,6 @@ We welcome contributions from cultural enthusiasts, AI researchers, and heritage
 
 This project is licensed under the **MIT License**. This is a permissive license that allows for broad use. See the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
 
-| Permission          | Status |
-| ------------------- | ------ |
-| ✅ Commercial Use   | Yes    |
-| ✅ Modification     | Yes    |
-| ✅ Distribution     | Yes    |
-| ✅ Private Use      | Yes    |
-| ❌ Liability        | No     |
-| ❌ Warranty         | No     |
 
 ## 🙏 Acknowledgments
 
