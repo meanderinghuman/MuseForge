@@ -1,240 +1,85 @@
-# 💻 MuseForge  
-> *Where Artificial Intelligence forges stories, heritage, and human creativity into digital form.*
-
----
+# 🏛️ MuseForge
 
 <div align="center">
 
+**Where Heritage Finds Its Voice.**
+
+*An AI-powered storyteller that transforms silent cultural artifacts into vivid, authentic narratives, breathing life into India's rich and diverse heritage.*
+
+</div>
+
+<div align="center">
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 ![GitHub stars](https://img.shields.io/github/stars/meanderinghuman/MuseForge?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/meanderinghuman/MuseForge?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/meanderinghuman/MuseForge)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/meanderinghuman/MuseForge)
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-![Python](https://img.shields.io/badge/python-3.9%2B-blue)
-![Framework](https://img.shields.io/badge/framework-PyTorch-red)
-![Model](https://img.shields.io/badge/model-Qwen2--VL--2B-orange)
 
-**An intelligent AI system that “sees” cultural artifacts and forges authentic stories reflecting the essence of human heritage.**
+[🚀 Get Started](#-getting-started) • [✨ Features](#-core-features) • [🏗️ Architecture](#-the-museforge-architecture) • [🤝 Contribute](#-join-the-forge)
 
-[🚀 Quick Start](#-quick-start) • [📊 Highlights](#-project-highlights) • [🏗️ Architecture](#-technical-architecture) • [🧠 Dataset](#-dataset-format) • [🤝 Contributing](#-contributing) • [📜 License](#-license)
+---
 
 </div>
 
----
+## 🌟 The Vision: Preserving a Digital Soul
 
-## 🌟 Overview  
+Countless cultural treasures exist only as silent images, their stories and contexts at risk of being lost to time. MuseForge addresses this critical gap by serving as a digital artisan, forging a connection between visual heritage and the rich narratives they hold.
 
-**MuseForge** is an advanced AI framework that combines *machine perception* and *creative storytelling* to bring cultural and visual data to life.  
-By uniting **Vision-Language Models (VLMs)** and **progressive learning**, it transforms silent imagery — temples, monuments, attire, and art — into rich, context-aware narratives that preserve cultural depth and authenticity.
+Our mission is to:
+-   📜 **Create Digital Immortality**: Transform visual heritage into enduring textual sagas, safeguarding them for future generations.
+-   🌍 **Build a Global Knowledge Bridge**: Make India's profound cultural wisdom accessible to a global audience of researchers, students, and enthusiasts.
+-   🎓 **Forge Engaging Educational Tools**: Create a dynamic new way to learn about history, art, and culture through AI-driven storytelling.
 
-It acts as a *digital forge*, shaping **pixels into prose** and **data into meaning.**
+## ✨ Core Features
 
----
+-   **Progressive Learning Pipeline**: A unique 3-stage process that teaches the AI to first **recognize** elements, then **understand** context, and finally **generate** rich narratives.
+-   **Diverse Cultural Dataset**: Trained on **960 curated images** spanning 5 major geographical regions of India, ensuring broad and authentic representation.
+-   **Efficient & Powerful**: Utilizes **LoRA fine-tuning** to achieve an **85% performance boost** (loss reduction from 130 to 19.7) on accessible hardware.
+-   **Culturally-Aware Storytelling**: Generates historically and culturally accurate narratives that honor the source material.
+-   **Innovative Methodology**: Introduces a novel approach to fine-tuning Vision-Language Models for specialized, high-context domains.
 
-## 🧠 Core Philosophy  
+## 📊 Project at a Glance
 
-- **🔍 Perception:** Empowering AI to see and recognize cultural depth in imagery.  
-- **🧩 Interpretation:** Understanding regional context and artistic nuance.  
-- **🪶 Creation:** Generating authentic, human-like cultural stories with AI.
+| Metric                | Achievement                                |
+| --------------------- | ------------------------------------------ |
+| 🧠 **Model** | Qwen2-VL (2B) with LoRA Fine-Tuning        |
+| 📷 **Dataset Size** | 960 Curated Cultural Images                |
+| 📈 **Performance** | 85% Loss Reduction (130 → 19.7)            |
+| 🗺️ **Coverage** | 5 Major Indian Geographical Regions        |
+| 🏗️ **Methodology** | 3-Stage Progressive Learning               |
+| ✅ **Output Quality** | High-Fidelity, Culturally Authentic Stories|
 
----
+## 🏗️ The MuseForge Architecture
 
-## 📊 Project Highlights  
-
-<div align="center">
-
-| Feature | Description |  
-|----------|--------------|  
-| 🧠 **AI Core** | Vision-Language Model (Qwen2-VL, 2B parameters) fine-tuned via LoRA for cultural storytelling. |  
-| 🧱 **3-Stage Training Pipeline** | Recognition → Comprehension → Story Generation — progressive fine-tuning for semantic depth. |  
-| 🎨 **Cultural Intelligence** | Detects regional and artistic attributes to create authentic heritage narratives. |  
-| ⚙️ **Model Efficiency** | 85% reduction in loss (130 → 19.7) with LoRA + quantization. |  
-| 🔍 **Explainability** | Traceable mapping between visual features and generated text. |  
-| 🌍 **Impact** | Aids digital preservation of heritage through AI-driven storytelling. |  
-
-</div>
-
----
-
-## 🏗️ Technical Architecture  
+MuseForge employs a three-stage progressive learning pipeline that mimics a human expert's process: observing details, understanding patterns, and finally, telling a compelling story.
 
 ```mermaid
 graph TD
-    A[🖼️ Image Input] --> B[👁️ Qwen2-VL Vision Encoder]
-    B --> C[🧠 Language Model Understanding]
-    C --> D[🧩 Stage 1: Cultural Recognition]
-    D --> E[🧭 Stage 2: Pattern & Context Understanding]
-    E --> F[🪶 Stage 3: Story Generation]
-    F --> G[📖 Authentic Cultural Narrative]
-```
-
----
-
-## ⚡ Training Configuration  
-
-| Parameter | Value |  
-|------------|--------|  
-| **Base Model** | Qwen2-VL-2B-Instruct |  
-| **Fine-tuning** | LoRA (r=8, α=32) |  
-| **Precision** | 4-bit Quantization (bfloat16) |  
-| **Optimizer** | AdamW + Cosine Scheduler |  
-| **Context Length** | 512 tokens |  
-| **Training Time** | ~3–5 hours (8GB GPU) |  
-
----
-
-## 📁 Repository Structure  
-
-```bash
-MuseForge/
-├── 🧠 train_pipeline.py        # Main 3-stage training pipeline
-├── 🔮 inference.py             # Story generation module
-├── 🧩 dataset_utils.py         # Dataset processing & augmentation
-├── ⚙️ config.py                # Configurations and hyperparameters
-├── 📊 evaluation_metrics.py    # Narrative accuracy evaluation
-├── 📋 requirements.txt         # Dependencies
-├── 📁 data/                    # Dataset directory
-│   └── cultural_dataset.json   # JSON-formatted dataset
-├── 📁 models/                  # Model checkpoints
-│   └── museforge_vlm_model/    # Trained model folder
-├── 📁 examples/                # Example inputs & outputs
-│   ├── input_image.jpg
-│   └── generated_story.txt
-└── 📖 README.md
-```
-
----
-
-## 🚀 Quick Start  
-
-### 1️⃣ Installation  
-
-```bash
-git clone https://github.com/meanderinghuman/MuseForge.git
+    A[Cultural Image Input] --> B[👁️ Vision Encoder (Qwen2-VL)]
+    B --> C[🧠 Language Model Core]
+    C --> D[**Stage 1: The Observer**<br/>Identifies cultural elements]
+    D --> E[**Stage 2: The Scholar**<br/>Understands regional patterns]
+    E --> F[**Stage 3: The Storyteller**<br/>Weaves an authentic narrative]
+    F --> G[📖 Forged Cultural Story]
+🔍 Stage 1 — The Eye of the ObserverGoal: To see and identify key components.Learns: To recognize temples, sculptures, traditional clothing, architectural features, and artifacts.Training: 1 Epoch | Learning Rate: 2e-4🎨 Stage 2 — The Mind of the ScholarGoal: To understand the relationships and context.Learns: To connect elements to broader architectural styles (Dravidian, Mughal), regional patterns, and cultural significance.Training: 1 Epoch | Learning Rate: 1e-4📚 Stage 3 — The Voice of the StorytellerGoal: To synthesize knowledge into a flowing narrative.Learns: To generate authentic, contextual stories that preserve historical accuracy and cultural nuance.Training: 2 Epochs | Learning Rate: 5e-5🚀 Getting StartedInstallationBash# Clone the repository
+git clone [https://github.com/meanderinghuman/MuseForge.git](https://github.com/meanderinghuman/MuseForge.git)
 cd MuseForge
+
+# Install core dependencies
 pip install -r requirements.txt
-pip install torch torchvision transformers[vision] peft accelerate bitsandbytes
-```
 
----
+# Install specialized vision-language dependencies
+pip install transformers[vision] torch torchvision peft accelerate bitsandbytes
+Forge Your First StoryPythonfrom inference import MuseForge
 
-### 2️⃣ Usage  
+# Initialize the model from a trained checkpoint
+story_forge = MuseForge("./models/cultural_vlm_trained")
 
-```python
-from inference import MuseForgeModel
+# Select a cultural image
+image_path = "examples/temple_image.jpg"
 
-model = MuseForgeModel("./models/museforge_vlm_model")
-story = model.generate_story("examples/input_image.jpg")
+# Forge a narrative
+story = story_forge.forge_story(image_path)
 print(story)
-```
-
-**Example Output:**
-```
-This timeless South Indian temple, adorned with intricate carvings and a towering gopuram, 
-echoes centuries of devotion and craftsmanship — a living narrative of culture forged in stone.
-```
-
----
-
-### 3️⃣ Train Your Own Model  
-
-```bash
-# Run full progressive training
-python train_pipeline.py
-
-# Test with smaller samples
-python train_pipeline.py --test_samples 100
-
-# Single stage training (optional)
-python train_pipeline.py --single_stage
-```
-
----
-
-## 🧠 Dataset Format  
-
-MuseForge expects datasets in this JSON structure:  
-
-```json
-{
-  "image_path": "regional_images/South_India/temple_001.jpg",
-  "region": "South_India",
-  "metadata": {
-    "elements": ["temple", "gopuram", "sculpture"],
-    "architecture": {"style": "Dravidian"}
-  },
-  "context_story": "This ancient temple stands as a testament to South Indian art and devotion."
-}
-```
-
----
-
-## 🌍 Regional Dataset Distribution  
-
-| Region | Samples | Focus |  
-|---------|----------|----------------|  
-| 🏔️ **North India** | 160 | Temples, monuments |  
-| 🏛️ **South India** | 200 | Dravidian architecture |  
-| 🎭 **East India** | 200 | Colonial heritage |  
-| 🏜️ **West India** | 200 | Stepwells, forts |  
-| 🌄 **Northeast India** | 200 | Tribal and ecological art |  
-
----
-
-## 🔬 Research Impact  
-
-MuseForge contributes to **AI-driven cultural preservation**, bridging technology with tradition.  
-It can serve as a **research framework** for:
-- Vision-language grounding tasks  
-- Cross-cultural narrative synthesis  
-- Heritage digitization and multimodal learning  
-
----
-
-## 🤝 Contributing  
-
-We welcome contributions from AI researchers, developers, and cultural experts!  
-
-1. 🍴 Fork the repository  
-2. 🌿 Create a branch: `git checkout -b feature/your-feature`  
-3. 💾 Commit: `git commit -m 'Added feature'`  
-4. 📤 Push: `git push origin feature/your-feature`  
-5. 🔀 Submit a Pull Request  
-
-**Areas to contribute:**  
-- Dataset expansion (regional or artifact-level)  
-- Model architecture improvements  
-- Multilingual or cross-cultural story support  
-- UI or demo app integrations  
-
----
-
-## 📜 License  
-
-This project is licensed under the **MIT License** — you are free to use, modify, and distribute the software with attribution.  
-
-```
-MIT License
-
-Copyright (c) 2025 Siddharth Pal
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the “Software”), to deal
-in the Software without restriction...
-```
-
----
-
-## 🙏 Acknowledgments  
-
-- **Qwen Team** — for the Qwen2-VL Vision-Language model  
-- **Open Source AI Community** — for enabling multimodal research and tools  
-- **Cultural Heritage Scholars** — for inspiring the integration of tradition and technology  
-
----
-
-<div align="center">
-
-⭐ *If MuseForge inspired you — consider starring this repository to support open cultural AI research.*  
-
-</div>
+Example OutputThis authentic East India scene while reveals a group of people walking across a bridge. The distinctive colonial calcutta showcases the region's unique architectural heritage and Regional cultural elements including poila boishakh, adda culture provide authentic local context. People adorned in traditional dress, ethnic wear embody the living culture....
+📈 Performance & ResultsThe progressive approach shows a clear and dramatic improvement in the model's learning, with each stage building effectively on the last.StageTaskLoss ReductionKey Learning1Element Recognition504 → 217Artifact Identification2Pattern Understanding217 → 201Regional Style Comprehension3Story Generation184 → 19.7Authentic Narrative Creation🛠️ Tech StackBase Model: Qwen2-VL-2B-InstructFine-tuning: LoRA (r=8, α=32, 7 target modules)Quantization: 4-bit with bfloat16 precision for efficiencyFrameworks: PyTorch, Hugging Face transformers, PEFT, accelerateOptimization: Gradient Checkpointing & QuantizationHardware: 8 GB+ GPU Recommended (e.g., NVIDIA RTX 3060)🤝 Join the ForgeWe welcome contributions from cultural enthusiasts, AI researchers, and heritage preservationists. Let's build this together!How to Contribute🍴 Fork the repository.🌿 Create a new branch (git checkout -b feature/your-amazing-feature).💾 Commit your changes (git commit -m 'Add your amazing feature').📤 Push to the branch (git push origin feature/your-amazing-feature).🔀 Open a Pull Request.Contribution Areas🖼️ Dataset Expansion: Add more regional and diverse cultural images.🧠 Model Improvements: Experiment with new architectures or training methods.🌍 Multilingual Support: Help MuseForge speak in regional languages.🧩 Applications: Build demos, web apps, or API interfaces.📜 LicenseThis project is licensed under the MIT License. This is a permissive license that allows for broad use. See the LICENSE file for details.PermissionStatus✅ Commercial UseYes✅ ModificationYes✅ DistributionYes✅ Private UseYes❌ LiabilityNo❌ WarrantyNo🙏 AcknowledgmentsA heartfelt thanks to the Qwen team for their incredible open-source vision-language model.To the open-source community for creating the tools that make projects like this possible.<div align="center">⭐ Star MuseForge if you believe in preserving cultural heritage through AI!</div>
