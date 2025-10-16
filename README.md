@@ -4,7 +4,7 @@
 
 **Where Heritage Finds Its Voice.**
 
-*An AI-powered storyteller that transforms silent cultural artifacts into vivid, authentic narratives, breathing life into India's rich and diverse heritage.*
+*This project fine-tunes a **Qwen2-VL (2B parameters)** vision-language model using a **3-stage progressive learning approach** on **960 diverse regional images** spanning India's vast cultural tapestry. It transforms silent cultural imagery into vivid, contextual narratives — pioneering a new path for digital heritage preservation.*
 
 </div>
 
@@ -161,14 +161,7 @@ We welcome contributions from cultural enthusiasts, AI researchers, and heritage
 
 This project is licensed under the **MIT License**. This is a permissive license that allows for broad use. See the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
 
-| Permission          | Status |
-| ------------------- | ------ |
-| ✅ Commercial Use   | Yes    |
-| ✅ Modification     | Yes    |
-| ✅ Distribution     | Yes    |
-| ✅ Private Use      | Yes    |
-| ❌ Liability        | No     |
-| ❌ Warranty         | No     |
+
 
 ## 🙏 Acknowledgments
 
